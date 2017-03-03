@@ -5,11 +5,13 @@ set -o pipefail   # don't ignore exit codes when piping output
 # set -x          # enable debugging
 
 # Configure directories
-build_dir=$1
-cache_dir=$2
-env_dir=$3
+BUILD_DIR=$1
+VENDOR_DIR="vendor"
 
-echo "Installing wp-cli...."
-wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-chmod +x wp-cli.phar
-mv wp-cli.phar /app/wp
+cd $BUILD_DIR
+mkdir -p $$VENDOR_DIR
+cd $VENDOR_DIR
+
+echo "DOWNLOAD_PATH = " $BUILD_DIR/$$VENDOR_DIR
+
+curl -L --silent https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
