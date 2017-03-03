@@ -12,7 +12,7 @@ env_dir=$3
 echo $cache_dir
 echo $2
 if [ ! -f $2/wp-cli.phar ]; then
-    echo "No cached wp-cli phar found, downloading!"
+    echo "No cached wp-cli phar found, downloading! hahaha"
     curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o $2/wp-cli.phar
 fi
 
