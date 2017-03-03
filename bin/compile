@@ -12,10 +12,7 @@ cd $BUILD_DIR
 mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 
-# Install wp cli
 curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o ./wp
 chmod +x wp
 
 # Install s3 cli
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
