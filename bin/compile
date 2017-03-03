@@ -9,6 +9,7 @@ BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
 cd $BUILD_DIR
+echo $PWD
 mkdir -p $VENDOR_DIR
 cd $VENDOR_DIR
 
