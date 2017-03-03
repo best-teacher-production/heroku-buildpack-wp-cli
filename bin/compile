@@ -8,11 +8,9 @@ set -o pipefail   # don't ignore exit codes when piping output
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
 
-cd $BUILD_DIR
-mkdir -p $VENDOR_DIR
-cd $VENDOR_DIR
+# cd $BUILD_DIR
+# mkdir -p $VENDOR_DIR
+# cd $VENDOR_DIR
 
-curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o ./wp
-chmod +x wp
-
-# Install s3 cli
+# curl https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o ./wp
+# chmod +x wp
