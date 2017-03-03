@@ -12,4 +12,4 @@ env_dir=$3
 echo "Installing wp-cli...."
 wget https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 chmod +x wp-cli.phar
-mv wp-cli.phar /app/
+mv wp-cli.phar /app/wp
